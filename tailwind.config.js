@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         'display': ['Monument Extended', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont'],
         'body': ['General Sans', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont'],
+       },
+       maxWidth: {
+        prose: '35ch'
        }
     },
     colors: {

@@ -30,14 +30,17 @@ const TipContainer: React.FC<Props> = (props) => {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full px-4 py-2 text-base font-semibold leading-5 text-white text-left">
-              <Icon className="mr-6" />
-              <span>{tip.title}</span>
-              <CheveronDownIcon
-                className={`${
-                  open ? 'transform rotate-180' : ''
-                } w-5 h-5 text-purple-500`}
-              />
+              <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-base font-semibold leading-5 text-white text-left">
+                <div className="flex">
+                  <Icon className="mr-6" />
+                  <span className="max-w-prose">{tip.title}</span>
+                </div>
+              
+                <CheveronDownIcon
+                  className={`${
+                    open ? 'transform rotate-180' : ''
+                  } w-5 h-5 text-gray fill-current`}
+                />
               </Disclosure.Button>
               <Transition
                 enter="transition duration-100 ease-out"
