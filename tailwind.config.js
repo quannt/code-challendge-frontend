@@ -2,7 +2,12 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['Monument Extended', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont'],
+        'body': ['General Sans', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont'],
+       }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -29,7 +34,7 @@ module.exports = {
       yellow: '#fcc419',
       orange: '#ff922b',
       pink: '#f06595',
-    },
+    }
   },
   variants: {
     extend: {},

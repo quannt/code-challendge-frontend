@@ -7,14 +7,15 @@ export default function Home({ tips }: { tips: Tip[] }) {
   return (
     <div>
       <Head>
-        <title>Coding challenge: Frontend - Maybe</title>
+        <title>Coding challenge: Frontend - Maybe - Ngo Tung Quan's submission</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="w-full my-8 text-center">
         <section>
-          <h1>UI Engineer Coding Challenge</h1>
-          <h2>by Maybe Labs</h2>
+          <h1 className="text-2xl leading-8 font-black font-display">UI Engineer</h1>
+          <h1 className="text-2xl leading-8 font-black font-display mb-4">Coding Challenge</h1>
+          <h2 className="text-sm leading-4 text-gray font-body mb-12">by Maybe Labs</h2>
         </section>
 
         <section>

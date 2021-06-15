@@ -4,7 +4,9 @@ class MaybeDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+        <link href="/fonts/fonts-loader.css" rel="stylesheet"/>
+        </Head>
         <body className="text-white bg-black">
           <Main />
           <NextScript />
