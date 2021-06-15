@@ -13,7 +13,10 @@ module.exports = {
       current: 'currentColor',
       black: '#19181d',
       'full-black': '#100F13',
-      white: '#fff',
+      white: {
+        DEFAULT: '#fff',
+        light: 'hsla(0, 0%, 100%, 0.8)'
+      },
       gray: {
         900: '#1E1D23',
         700: '#333235',

@@ -20,7 +20,7 @@ export default function Home({ tips }: { tips: Tip[] }) {
 
         <section>
         {tips.map((tip) => (
-         <TipContainer tip={tip}></TipContainer>
+         <TipContainer className="mb-4" key={tip.id} tip={tip}></TipContainer>
         ))}
         </section>
       </main>
@@ -38,3 +38,4 @@ export function getStaticProps() {
     },
   }
 }
+
