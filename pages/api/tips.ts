@@ -1,7 +1,8 @@
+import { NextApiRequest, NextApiResponse } from 'next'
 import { Tip } from '../../models/tip'
 import { TipType } from '../../models/tip-type'
 
-export default function tipsAPI(req, res) {
+export default function tipsAPI(req: NextApiRequest, res: NextApiResponse) {
   const data: Tip[] = [
     {
       title: 'Amazing savings rate! Keep it up 🔥',

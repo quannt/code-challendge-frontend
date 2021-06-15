@@ -10,6 +10,7 @@ export default function Home() {
 
       <main className="w-full my-8 text-center">
         <p>Now it's your turn!</p>
+        <span>Hello world</span>
       </main>
     </div>
   )
